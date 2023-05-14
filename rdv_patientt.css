@@ -1,0 +1,99 @@
+* {
+    font-family: 'Arial', sans-serif;
+   
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 3px #222;
+    }
+
+    
+  label {
+    display: block;
+    margin-bottom: 10px;
+  
+  }
+  
+  input,
+  select {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+  /* Ajouter un fond d'écran de fond */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Pour que l'image soit en arrière-plan */
+    opacity: 0.1; /* Opacité de l'image de fond */
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Ajustement de la luminosité de l'image */
+    filter: brightness(100%); /* Ajustez la valeur pour obtenir la luminosité souhaitée (0% pour totalement sombre, 100% pour aucune modification) */
+}
+
+.retour-link {
+  display: inline-block;
+  position: relative;
+  margin: 30px 875px 0; /* supprimer la valeur margin-left et margin-right */
+  padding: 10px 30px 10px 40px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 0px 3px #222;
+  transition: background-color 0.3s ease;
+  text-align: center; /* ajouter cette ligne */
+  }
+  
+  .retour-link .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('return-down-back-outline.svg');
+  background-size: cover;
+  }
+  
+  .retour-link:hover {
+  background-color: #0062cc;
+  }
+  
+  .retour-link:active {
+  background-color: #004e8c;
+  }

@@ -1,0 +1,180 @@
+/* style pour le formulaire */
+* {
+  font-family: 'Arial', sans-serif;
+  
+}
+
+
+form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 1000px;
+  box-shadow: 0px 0px 3px #ccc;
+  margin : 0 auto;
+  opacity : 0.9;
+  filter : brightness(90%)
+}
+h1 {
+  text-align: center;
+  color :  #fff;;
+}
+
+/* style pour les champs de formulaire */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="tel"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 2px #fff;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #007bff;
+}
+
+/* style pour les boutons */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0f75b1;
+}
+
+/* style pour les champs radio */
+input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 18px;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked + label:before {
+  content: '\2713';
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+/* style pour les champs de spécialité et antécédents */
+#specialite-div, #antecedents-div {
+  margin-top: 20px;
+}
+
+#specialite-div label, #antecedents-div label {
+  display: block;
+  font-weight: bold;
+}
+
+#specialite-div input[type="text"], #antecedents-div textarea {
+  display: block;
+  margin-top: 5px;
+}
+
+/* style pour le lien de déconnexion */
+a.logout-link {
+  display: block;
+  max-width: 150px;
+  margin: 30px 430px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  box-shadow : 0px 0px 3px #222;
+  transition: background-color 0.3s ease;
+}
+
+a.logout-link:hover {
+  background-color: #0062cc;
+}
+
+a.logout-link:active {
+  background-color: #004e8c;
+}
+
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Pour que l'image soit en arrière-plan */
+  opacity: 1; /* Opacité de l'image de fond */
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Ajustement de la luminosité de l'image */
+  filter: brightness(100%); /* Ajustez la valeur pour obtenir la luminosité souhaitée (0% pour totalement sombre, 100% pour aucune modification) */
+}
+
+
+.retour-link {
+  display: inline-block;
+  position: relative;
+  margin: 30px 430px 0px;
+  padding: 10px 30px 10px 40px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 0px 3px #222;
+  transition: background-color 0.3s ease;
+}
+
+
+.retour-link .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('return-down-back-outline.svg');
+  background-size: cover;
+}
+
+a.retour-link:hover {
+  background-color: #0062cc;
+}
+
+a.retour-link:active {
+  background-color: #004e8c;
+}

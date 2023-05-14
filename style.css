@@ -1,0 +1,138 @@
+/* Réinitialisation des styles par défaut des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+        
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    color : white;
+}
+
+
+
+.container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(248, 248, 248, 0.8); /* Couleur d'arrière-plan avec opacité */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+     display: flex; /* Ajout de flexbox */
+    flex-direction: column; /* Définir la direction des éléments en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
+    box-shadow: 5px 6px 40px -4px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation au survol */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Animation au clic */
+input[type="submit"]:active {
+    background-color: #003c80;
+}
+
+
+.info-container {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-box {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%)
+}
+
+.info-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Style du rectangle blanc */
+.rectangle {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.1); /* Utilisation de hsla pour définir la couleur blanche avec luminosité ajustée et la transparence */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Bordure semi-transparente */
+    border-radius: 5px;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color : white;
+
+}
+
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Pour que l'image soit en arrière-plan */
+    opacity: 0.9; /* Opacité de l'image de fond */
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Ajustement de la luminosité de l'image */
+    filter: brightness(90%); /* Ajustez la valeur pour obtenir la luminosité souhaitée (0% pour totalement sombre, 100% pour aucune modification) */
+}
+
+.logo-container {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+

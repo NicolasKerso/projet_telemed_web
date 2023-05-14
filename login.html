@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div class="background-container" style="opacity: 0.9"></div>
+    <div style="text-align: center;">
+        <img src="logo2.png" alt="logo">
+    </div>
+    <div class="container" >
+        <h2 style="text-align: center;">Connexion</h2>
+        <div style="display: flex; justify-content: center;">
+            <form action="login.php" method="post">
+                <div style="display: flex; flex-direction: column;">
+                    <label for="username" style="margin-bottom: 5px;">Nom d'utilisateur</label>
+                    <div style="position: relative;">
+                        <img src="user-icon.png" alt="user icon" style="width: 20px; height: 20px; position: absolute; top: 10px; left: 10px;">
+                        <input type="text" id="username" name="username" required style="padding-left: 40px;">
+                    </div>
+                </div>
+                <br>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="password" style="margin-bottom: 5px;">Mot de passe</label>
+                    <div style="position: relative;">
+                        <img src="padlock.png" alt="password icon" style="width: 20px; height: 20px; position: absolute; top: 10px; left: 10px;">
+                        <input type="password" id="password" name="password" required style="padding-left: 40px;">
+                    </div>
+                </div>
+                <br>
+                    <input class="connection" type="submit" value="Se connecter">
+            </form>
+        </div>
+    </div>
+    <div class="rectangle">
+        <div class="info-container">
+            <div class="info-box">
+                <img src="phone-icon.png" alt="Numéro de téléphone" class="info-icon">
+                <p class="info-text">0770484752 </p>
+            </div>
+            <div class="info-box">
+                <img src="mail-icon.png" alt="Adresse e-mail" class="info-icon">
+                <p class="info-text"><a href="mailto:leleunicolas1@hotmail.fr" style="color : white">leleunicolas1@hotmail.fr</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
